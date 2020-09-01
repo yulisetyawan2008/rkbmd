@@ -34,4 +34,10 @@ class BmdController extends Controller
 
         return redirect('/bmd');
     }
+
+    public function search(Request $request){
+        $search = $request->get('search');
+        $bmds = Bmd::where('nm_barang', 'like', '%'.$search.'%')->paginate(100);
+        return view('bmd.index', compact('bmds'));
+    }
 }

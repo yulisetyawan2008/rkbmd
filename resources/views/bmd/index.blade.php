@@ -7,7 +7,16 @@
             <p>Barang Milik Daerah di Perangkat Daerah tertentu</p>
         </div>
         <div class="card-body">
-            
+                    <div class="row">
+                        <form action="/bmd/search" method="get">
+                            <div class="input-group">
+                                <input type="search" name="search" class="form-control">
+                                <span class="input-group-prepend">
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
             <table class="table table-bordered mt-3">
                 <thead>
                     <tr>

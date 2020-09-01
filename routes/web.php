@@ -43,6 +43,7 @@ Route::delete('/output/{id}', 'OutputController@destroy');
 Route::get('/bmd', 'BmdController@index');
 Route::get('/bmd/{id}/edit', 'BmdController@edit');
 Route::put('/bmd/{id}', 'BmdController@update');
+Route::get('/bmd/search', 'BmdController@search');
 
 Route::get('/rkbmd', 'RkbmdController@index');
 Route::get('/rkbmd/create', 'RkbmdController@create');
